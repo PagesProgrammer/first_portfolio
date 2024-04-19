@@ -1,0 +1,593 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
+  /* transform: translateX(0); */
+  transform-origin: right;
+  animation: transitionIn 0.75s;
+}
+
+html.is-animating .transition-fade {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+  opacity: 0;
+  transform: translateX(0);
+}
+.transition-swipe {
+  transition: 500ms;
+  /* transform: translateY(0); */
+}
+
+html.is-animating .transition-swipe {
+  opacity: 1;
+  transform: translateY(100px);
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+/* html, */
+/* body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  /* background-color: cyan; */
+  background-image: url("https://i.pinimg.com/originals/42/7c/0a/427c0a3f6417478feaa080e39a1ce89b.jpg");
+  color: black;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.navbar-nav {
+  margin-left: 200px;
+}
+
+.navbar-item {
+  padding-right: 3rem;
+  padding-left: 2rem;
+  color: black;
+}
+
+.navbar-brand {
+  padding-left: 20px;
+  font-family: "Oswald";
+  font-size: 25px;
+}
+
+.nav-link {
+  color: black;
+  font-size: 18px;
+  font-family: "Oswald";
+}
+.nav-link:hover {
+  background-color: #89cff0;
+  border-radius: 5px;
+}
+
+.Personal-image {
+  max-width: 100%;
+  max-height: 100%;
+  background-size: contain;
+  border-radius: 20px;
+}
+
+#phone-number {
+  padding-bottom: 10px;
+}
+
+#phone,
+#email,
+#address,
+#address-one,
+#birth {
+  margin-bottom: 0;
+}
+
+.main-access {
+  justify-content: center;
+  background-image: url("https://i.pinimg.com/originals/42/7c/0a/427c0a3f6417478feaa080e39a1ce89b.jpg");
+  background-color: wheat;
+  height: 710px;
+  padding-top: 195px;
+}
+
+#media-icons {
+  background-color: blue;
+  padding-left: 2rem;
+  font-size: 17px;
+}
+
+.fab {
+  padding: 25px;
+  color: black;
+}
+
+#info,
+#image {
+  color: white;
+  padding: 20px;
+  margin: 0;
+  background-color: wheat;
+  align-content: center;
+  background-image: url("https://wonderfulengineering.com/wp-content/uploads/2014/01/building-wallpaper.jpeg");
+  border-radius: 5px;
+}
+#Profession {
+  font-family: "Raleway";
+  font-size: 20px;
+}
+
+#details-background {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat";
+  padding-top: 10px;
+}
+
+.info-about-me {
+  padding: 150px 50px 50px 50px;
+  color: black;
+  background-color: cornsilk;
+  align-items: conter;
+  justify-content: center;
+  font-size: 18px;
+  font-family: "Montserrat";
+}
+h3 {
+  font-family: "Roboto";
+}
+.info-about-me p {
+  margin: 10px 180px 10px 180px;
+}
+
+.date-role-one,
+.date-role-two,
+.date-role-three,
+.date-role-four {
+  width: 30%;
+  /* margin: 10px 25px 25px 150px; */
+  float: left;
+}
+
+.company-and-duties-one,
+.company-and-duties-two,
+.company-and-duties-three,
+.company-and-duties-four {
+  text-align: left;
+  clear: right;
+  margin-left: 400px;
+  /* margin-left: 450px;
+  padding: 100px; */
+  width: 70%;
+}
+
+.company-name {
+  padding-left: 30px;
+  margin: 0;
+}
+.experience-one,
+.experience-two,
+.experience-three,
+.experience-four {
+  background-color: white;
+  margin: 150px 100px 50px 100px;
+  padding: 50px 150px 50px 80px;
+  font-family: "Montserrat";
+  border-radius: 5px;
+}
+
+.experience-two,
+.experience-three,
+.experience-four {
+  margin: 30px 100px 30px 100px;
+}
+
+.duration-of-work {
+  margin: 0;
+}
+
+.date-one,
+.date-two,
+.date-three,
+.date-four,
+.date-five,
+.date-six,
+.date-seven,
+.date-eight,
+.date-nine,
+.date-ten {
+  width: 30%;
+  /* margin: 10px 25px 25px 150px; */
+  float: left;
+}
+
+.school-name {
+  padding-left: 30px;
+  margin: 0;
+}
+
+.course-and-syllabus-one,
+.course-and-syllabus-two,
+.course-and-syllabus-three,
+.course-and-syllabus-four,
+.course-and-syllabus-five,
+.course-and-syllabus-six,
+.course-and-syllabus-seven,
+.course-and-syllabus-eight,
+.course-and-syllabus-nine,
+.course-and-syllabus-ten {
+  text-align: left;
+  clear: right;
+  margin-left: 500px;
+  /* margin-left: 450px;
+  padding: 100px; */
+  width: 70%;
+}
+
+.education-one,
+.education-two,
+.education-three,
+.education-four,
+.education-five,
+.education-six,
+.education-seven,
+.education-eight,
+.education-nine,
+.education-ten {
+  background-color: white;
+  margin: 150px 250px 50px 300px;
+  padding: 30px 40px 30px 50px;
+  border-radius: 5px;
+  font-family: "Montserrat";
+}
+
+.education-two,
+.education-three,
+.education-four,
+.education-five,
+.education-six,
+.education-seven,
+.education-eight,
+.education-nine,
+.education-ten {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.duration-of-course {
+  margin: 0;
+}
+
+.edu-hr {
+  margin-right: 350px;
+  margin-left: 400px;
+  background-color: cyan;
+}
+
+hr {
+  margin-right: 200px;
+  margin-left: 300px;
+  background-color: cyan;
+}
+
+.key-skills {
+  margin: 10px 20% 5px 20%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "Montserrat";
+}
+
+#professionalism,
+#communication,
+#planning-and-organization,
+#commitment-to-continuous-learning,
+#teamwork {
+  padding-bottom: 20px;
+}
+
+.header {
+  text-decoration: underline;
+  margin: 80px 0 20px 0;
+  color: white;
+  font-family: "Oswald";
+  font-size: 30px;
+}
+
+.header-two {
+  margin-top: 35px;
+  text-decoration: underline;
+  color: #fff;
+  font-family: "Oswald";
+  font-size: 32px;
+}
+
+.project-header {
+  text-decoration: underline;
+  margin: 80px 0 20px 0;
+  /* color: white; */
+  font-family: "Oswald";
+  font-size: 30px;
+  color: yellow;
+}
+.project-header-two {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  /* color: #fff; */
+  font-family: "Oswald";
+  font-size: 30px;
+  color: yellow;
+}
+.project-header-three {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  /* color: #fff; */
+  font-family: "Oswald";
+  font-size: 30px;
+  color: yellow;
+}
+
+.technical-skills {
+  background-color: white;
+  text-align: left;
+  margin: 10px 20% 5px 20%;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "Montserrat";
+}
+
+#programming-languages,
+#environment,
+#cloud-platforms,
+#tools,
+#others {
+  padding-bottom: 20px;
+}
+
+.project-image {
+  /* width: 100%; */
+  width: 300px;
+  height: 300px;
+  /* padding: 5px; */
+  /* justify-content: center; */
+}
+
+.project-display {
+  margin-left: 250px;
+  margin-right: 300px;
+  /* background-image: url("https://wonderfulengineering.com/wp-content/uploads/2014/01/building-wallpaper.jpeg"); */
+  background-color: #89cff0;
+  text-align: center;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+  border-radius: 8px;
+}
+.project-display-two {
+  margin-left: 250px;
+  margin-right: 300px;
+  /* background-image: url("https://wonderfulengineering.com/wp-content/uploads/2014/01/building-wallpaper.jpeg"); */
+  background-color: #89cff0;
+  text-align: center;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+  border-radius: 8px;
+}
+
+.project-display-three {
+  margin-left: 250px;
+  margin-right: 300px;
+  /* background-image: url("https://wonderfulengineering.com/wp-content/uploads/2014/01/building-wallpaper.jpeg"); */
+  background-color: #89cff0;
+  text-align: center;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+  border-radius: 8px;
+}
+
+.project-display a,
+.project-display-two a,
+.project-display-three a {
+  text-decoration: none;
+}
+
+.project-one,
+.project-two,
+.project-three {
+  margin: 20px 10px 20px 100px;
+}
+.project-two,
+.project-three {
+  margin-left: 20px;
+}
+
+.project-four,
+.project-five,
+.project-six {
+  margin: 20px 30px 20px 60px;
+}
+.project-five,
+.project-six {
+  margin-left: 20px;
+}
+
+.project-seven,
+.project-eight,
+.project-nine {
+  margin: 20px 20px 20px 60px;
+}
+.project-eight,
+.project-nine {
+  margin-left: 25px;
+}
+
+h5 {
+  color: white;
+  background-color: black;
+  padding: 10px 10px 10px 10px;
+  /* margin-left: 50px; */
+  margin-bottom: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: "Montserrat";
+}
+
+/* 
+#job-title 
+    margin-bottom: 150px;
+} */
+
+section {
+  height: 95vh;
+  width: 100%;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  padding-top: 10px;
+}
+
+#details {
+  justify-content: center;
+  height: 60vh;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 250px;
+  padding: 20px;
+  align-content: center;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-size: 18px;
+}
+#contact-icons {
+  background-color: blue;
+  border-radius: 5px;
+}
+
+.mail-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.form-group {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 28px;
+  border-radius: 8px;
+  color: blue;
+  text-align: center;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+  font-family: "Oswald";
+}
+
+button[type="submit"]:hover {
+  background-color: cyan;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* #status {
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+} */
+
+/* .success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+
+.error {
+  background-color: red;
+  color: white;
+  animation: status 4s ease forwards;
+} */
+
+/* @keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+} */
+
+#mail {
+  margin-bottom: 0;
+}
+
+#fullName {
+  padding: 20px;
+  font-size: 50px;
+}
